@@ -34,7 +34,7 @@ namespace Creating_a_custom_user_login_form.Models
             //  @"='C:\Users\Andrei\Documents\GitHub\pssc-proiect\IterfataUtilizator\App_Data\Users.mdf';Integrated Security=True"))
 
             using (var cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename" +
-          @"='C:\Users\marco\Music\An IV\pssc\Proiect-PSSC-2018\UserInterface\UserInterface\App_Data\Users.mdf';Integrated Security=True"))
+          @"='C:\Users\eandrei\Documents\GitHub\PSSC-proiect\UserInterface\UserInterface\App_Data\Users.mdf';Integrated Security=True"))
             {
                 string _sql = @"SELECT [Username] FROM [dbo].[System_Users] " +
                        @"WHERE [Username] = @u AND [Password] = @p";

@@ -8,8 +8,12 @@ namespace UserInterface.Controllers
 {
     public class HomePageController : Controller
     {
+        public ActionResult AdaugaApartament()
+        {
+
+            return View("AdaugaApartament", "HomePage");
+        }
 
 
-       
     }
 }
