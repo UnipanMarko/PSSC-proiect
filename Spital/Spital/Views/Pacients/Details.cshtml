@@ -1,0 +1,60 @@
+﻿@model Spital.Models.Pacient
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Pacient</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nume)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nume)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Buget)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Buget)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Doctor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Doctor.IdDoctor)
+                @Html.DisplayFor(model => model.Doctor.Nume)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tratament)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tratament.IdTratament)
+                @Html.DisplayFor(model => model.Tratament.Nume)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IdPacient }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
